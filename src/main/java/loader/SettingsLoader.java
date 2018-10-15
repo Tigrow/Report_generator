@@ -13,7 +13,7 @@ import java.io.Reader;
 /**
  * Класс отвечающий за загрузку XML.
  */
-public class SettingsLoader {
+public class SettingsLoader implements Loader<Settings> {
 
   /**
    * Метол выполняющий загрузку XML и сериализацию его в Settings объект.
@@ -21,7 +21,7 @@ public class SettingsLoader {
    * @param reader - объект содержащий в себе XML
    * @return - возвращает сериализованный Settings объект
    */
-  public static Settings load(Reader reader) throws JAXBException, XMLStreamException {
+  public Settings load(Reader reader) throws JAXBException, XMLStreamException {
     JAXBContext jaxbContext = JAXBContext.newInstance(Settings.class);
     XMLStreamReader xmlStreamReader = XMLInputFactory.newFactory().createXMLStreamReader(reader);
     Unmarshaller unmarshaller = jaxbContext.createUnmarshaller();
