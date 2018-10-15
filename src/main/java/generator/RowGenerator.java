@@ -14,11 +14,19 @@ class RowGenerator {
   }
 
   String generateRow(String[] field) {
-    /*StringBuilder stringBuilder = new StringBuilder();
+    StringBuilder stringBuilder = new StringBuilder();
     stringBuilder.append("| ");
     for (int i = 0; i < field.length; i++) {
-      if()
-    }*/
+      if (field[i].length() > columns.get(i).getWidth()){
+
+      }
+    }
+    return null;
+  }
+
+  private String[] splitField(String string, int width){
+    String str[] = string.split("[\\W]");
+    //if (str.length > )
     return null;
   }
 }
