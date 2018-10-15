@@ -56,9 +56,9 @@ public class SettingsLoaderTest {
   }
 
   @Test
-  public void loadSettings() throws JAXBException, XMLStreamException {
+  public void load() throws JAXBException, XMLStreamException {
 
-    Settings settings = SettingsLoader.loadSettings(reader);
+    Settings settings = SettingsLoader.load(reader);
 
     Assert.assertEquals(settings.getColumns().get(0).getTitle(),column.getTitle());
     Assert.assertEquals(settings.getColumns().get(0).getWidth(),column.getWidth());
