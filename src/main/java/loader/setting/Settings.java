@@ -1,7 +1,7 @@
-package loader;
+package loader.setting;
 
-import loader.setting.Column;
-import loader.setting.Page;
+import loader.setting.field.Column;
+import loader.setting.field.Page;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlElementWrapper;

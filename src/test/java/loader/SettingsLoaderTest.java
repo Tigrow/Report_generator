@@ -1,7 +1,8 @@
 package loader;
 
-import loader.setting.Column;
-import loader.setting.Page;
+import loader.setting.field.Column;
+import loader.setting.field.Page;
+import loader.setting.Settings;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

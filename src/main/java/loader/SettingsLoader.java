@@ -1,5 +1,7 @@
 package loader;
 
+import loader.setting.Settings;
+
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
